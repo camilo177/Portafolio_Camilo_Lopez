@@ -2,9 +2,16 @@ import { useState } from "react";
 import emailjs from 'emailjs-com';
 import { useTranslation } from "react-i18next";
 
+interface FormData {
+  username: string;
+  lastname: string;
+  email: string;
+  message: string;
+}
+
 const Contact: React.FC = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     username: '',
     lastname: '',
     email: '',
@@ -26,11 +33,11 @@ const Contact: React.FC = () => {
     emailjs.send('service_tspm7pg', 'template_oehbksm', templateParams, 'aU2gMZl8uL-tN8FSf')
       .then(response => {
         console.log('SUCCESS!', response.status, response.text);
-        // Handle successful email sending (e.g., show a notification)
+        alert('Email sent successfully!');
       })
       .catch(err => {
         console.error('FAILED...', err);
-        // Handle email sending failure (e.g., show a notification)
+        alert('Failed to send email.');
       });
   };
 
