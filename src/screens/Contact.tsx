@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
       reply_to: formData.email,
     };
 
-    emailjs.send('your_service_id', 'your_template_id', templateParams, 'your_user_id')
+    emailjs.send('service_tspm7pg', 'template_oehbksm', templateParams, 'aU2gMZl8uL-tN8FSf')
       .then(response => {
         console.log('SUCCESS!', response.status, response.text);
         // Handle successful email sending (e.g., show a notification)
