@@ -37,7 +37,6 @@ const Skills = () => {
             <section key={index} className="flex flex-col items-center justify-center h-auto sm:h-96 w-60 sm:py-10 py-4">
               <div className="bg-gray-300 rounded-lg p-4 flex flex-col items-center">
                 <section className="pb-4 pt-2 text-white text-3xl font-semibold font-Raleway">
-                  {skill.title}
                 </section>
                 <img className="h-32 sm:h-48" src={skill.image} alt={skill.title} />
                 <button className="mt-4 bg-gray-500 text-white rounded-full px-6 py-2">
