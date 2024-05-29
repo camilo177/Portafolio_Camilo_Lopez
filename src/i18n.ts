@@ -36,7 +36,20 @@ i18n.use(initReactI18next).init({
         emailContact: 'Email',
         mensajeConatct:'Mesagge',
         enviarContact:'Send message',
-        hecho:'Handcrafted by me :)'
+        hecho:'Handcrafted by me :)',
+        project1: 'Project 1',
+        description1:'Description 1',
+        project2: 'Project 2',
+        description2:'Description 2',
+        project3: 'Project 3',
+        description3:'Description 3',
+        skills1: 'Data Science',
+        skills2: 'Software Development',
+        skills3: 'AI',
+        experience1: 'Administrative intern',
+        experience2: 'Investsigation aid',
+        descripExp1:'Observatorio de Internacionalización Empresarial y Regional (OIER)',
+        descripExp2:'Institución Universitaria CEIPA',
       },
     },
     es: {
@@ -66,12 +79,28 @@ i18n.use(initReactI18next).init({
         emailContact: 'Correo electrónico',
         mensajeConatct:'Mensaje',
         enviarContact:'Enviar mensaje',
-        hecho:'Hecho por mi'
+        hecho:'Hecho por mi',
+        project1: 'Proyecto 1',
+        description1:'Descripción del Proyecto 1',
+        project2: 'Proyecto 2',
+        description2:'Descripción del Proyecto 2',
+        project3: 'Proyecto 3',
+        description3:'Descripción del Proyecto 3',
+        skills1: 'Ciencia de datos',
+        skills2: 'Desarrollo de software',
+        skills3: 'Inteligencia artificial',
+        experience: 'Experiencia Laboral',
+        experience1: 'Interno Administrativo',
+        experience2: 'Asistente de Investigación',
+        descripExp1:'Observatorio de Internacionalización Empresarial y Regional (OIER)',
+        descripExp2:'Institución Universitaria CEIPA',
+
+      },
           },
 
     },
 
   },
-});
+);
 
 export default i18n;

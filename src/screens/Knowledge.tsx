@@ -36,16 +36,16 @@ const Knowledge = () => {
         
         {/* Segundo Recuadro */}
         <div className="w-full md:w-[45%] bg-gray-200 rounded-xl shadow-md p-8">
-          <h3 className="text-2xl text-center font-bold mb-4">{t('Experiencia Laboral')}</h3>
+          <h3 className="text-2xl text-center font-bold mb-4">{t('experience')}</h3>
           <ul className="text-lg sm:text-xl font-oswald text-black text-center">
             <li>
-              {t('Interno Administrativo')}<br />
-              {t('Observatorio de Internacionalización Empresarial y Regional (OIER)')}<br />
+              {t('experience1')}<br />
+              {t('descripExp1')}<br />
               2022
             </li>
             <li>
-              {t('Asistente de Investigación')}<br />
-              {t('Institución Universitaria CEIPA')}<br />
+              {t('experience2')}<br />
+              {t('descripExp2')}<br />
               2023-2024
             </li>
           </ul>

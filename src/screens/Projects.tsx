@@ -10,9 +10,9 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const projects = [
-    { title: t('Proyecto 1'), description: t('Descripción del Proyecto 1'), image: imagen },
-    { title: t('Proyecto 2'), description: t('Descripción del Proyecto 2'), image: imagen },
-    { title: t('Proyecto 3'), description: t('Descripción del Proyecto 3'), image: imagen }
+    { title: t('project1'), description: t('description1'), image: imagen },
+    { title: t('project2'), description: t('description2'), image: imagen },
+    { title: t('project3'), description: t('description3'), image: imagen }
   ];
 
   const handleNext = () => {
@@ -43,9 +43,6 @@ const Projects = () => {
                 <p className="mt-4 text-gray-700 text-center">
                   {project.description}
                 </p>
-                <button className="mt-4 bg-gray-500 text-white rounded-full px-6 py-2">
-                  {t('Learn More')}
-                </button>
               </div>
             </section>
           ))}

@@ -10,9 +10,9 @@ const Skills = () => {
   const { t } = useTranslation();
   const [, setCurrentIndex] = useState(0);
   const skills = [
-    { title: t('Ciencia de datos'), image: ciencia },
-    { title: t('Desarrollo de software'), image: desarrollo },
-    { title: t('AI'), image: ia }
+    { title: t('skills1'), image: ciencia },
+    { title: t('skills2'), image: desarrollo },
+    { title: t('skills3'), image: ia }
   ];
 
   const handleNext = () => {
@@ -36,10 +36,11 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <section key={index} className="flex flex-col items-center justify-center h-auto sm:h-96 w-60 sm:py-10 py-4">
               <div className="bg-gray-300 rounded-lg p-4 flex flex-col items-center">
-                <section className="pb-4 pt-2 text-white text-3xl font-semibold font-Raleway">
-                </section>
+                <section className="pb-4 pt-2 text-white text-3xl font-semibold font-Raleway text-center">
+                  
+                </section>r
                 <img className="h-32 sm:h-48" src={skill.image} alt={skill.title} />
-                <button className="mt-4 bg-gray-500 text-white rounded-full px-6 py-2">
+                <button className="mt-4 bg-gray-500 text-white rounded-full px-6 py-2 cursor-default">
                   {t(skill.title)}
                 </button>
               </div>
